@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  postgrestest1:
+    image: postgres:13
+    environment:
+      - POSTGRES_DB=test_1
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=devpasspost
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
