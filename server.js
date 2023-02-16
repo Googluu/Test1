@@ -1,5 +1,7 @@
 const express = require("express");
 const { graphqlHTTP } = require("express-graphql");
+const swaggerUi = require("swagger-ui-express");
+const swaggerDocument = require("./swagger.json");
 
 const schema = require("./graphql/schema");
 
@@ -17,6 +19,22 @@ app.use(
     schema,
     graphiql: true,
   })
+);
+
+const options = {
+  swaggerDefinition: {
+    info: {
+      title: "My APITEST1",
+      version: "1.0.0",
+      description: "My API with Swagger and Graphql + Node",
+    },
+  },
+  apis: ["./routes/*.js"],
+};
+app.use(
+  "/api-docs",
+  swaggerUi.serve,
+  swaggerUi.setup(swaggerDocument, options)
 );
 
 app.listen(port);
