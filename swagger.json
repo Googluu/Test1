@@ -6,8 +6,7 @@
     "description": "My API with Swagger"
   },
   "basePath": "/graphql",
-  "host": "https://my-test1uno.herokuapp.com/api-docs/#/graphql/post_",
-  "schemes": ["https"],
+  "schemes": ["http"],
   "consumes": ["application/json"],
   "produces": ["application/json"],
   "paths": {
