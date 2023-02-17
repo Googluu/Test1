@@ -32,7 +32,7 @@ app.use(
 
 const whitelist = [
   "http://localhost:3000",
-  " https://my-test1uno.herokuapp.com/",
+  "https://my-test1uno.herokuapp.com/",
 ];
 const optionsCors = {
   origin: (origin, callback) => {
