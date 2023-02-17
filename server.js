@@ -13,6 +13,8 @@ app.use(express.json());
 const whitelist = [
   "http://localhost:3000",
   " https://my-test1uno.herokuapp.com/",
+  " https://my-test1uno.herokuapp.com/graphql",
+  " https://my-test1uno.herokuapp.com/api-docs",
 ];
 const optionsCors = {
   origin: (origin, callback) => {
