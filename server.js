@@ -10,6 +10,14 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
 
+app.use(
+  "/graphql",
+  graphqlHTTP({
+    schema,
+    graphiql: true,
+  })
+);
+
 app.get("/", (req, res) => {
   res.send("Welcome");
 });
@@ -44,12 +52,5 @@ const optionsCors = {
   },
 };
 app.use(cors(optionsCors));
-app.use(
-  "/graphql",
-  graphqlHTTP({
-    schema,
-    graphiql: true,
-  })
-);
 
 app.listen(port);
