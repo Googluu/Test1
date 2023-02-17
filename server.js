@@ -30,7 +30,7 @@ const options = {
       description: "My API with Swagger and Graphql + Node",
     },
   },
-  apis: ["./routes/*.js"],
+  apis: ["./graphql/*.js"],
 };
 app.use(
   "/api-docs",
