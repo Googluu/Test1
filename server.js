@@ -43,6 +43,7 @@ const optionsCors = {
     }
   },
 };
+app.use(cors(optionsCors));
 app.use(
   "/graphql",
   graphqlHTTP({
@@ -50,6 +51,5 @@ app.use(
     graphiql: true,
   })
 );
-app.use(cors(optionsCors));
 
 app.listen(port);
