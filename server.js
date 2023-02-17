@@ -10,23 +10,6 @@ const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
 
-const whitelist = [
-  "http://localhost:3000",
-  " https://my-test1uno.herokuapp.com/",
-  " https://my-test1uno.herokuapp.com/graphql",
-  " https://my-test1uno.herokuapp.com/api-docs",
-];
-const optionsCors = {
-  origin: (origin, callback) => {
-    if (whitelist.includes(origin) || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("no permitido"));
-    }
-  },
-};
-app.use(cors(optionsCors));
-
 app.get("/", (req, res) => {
   res.send("Welcome");
 });
@@ -54,5 +37,22 @@ app.use(
   swaggerUi.serve,
   swaggerUi.setup(swaggerDocument, options)
 );
+
+const whitelist = [
+  "http://localhost:3000",
+  " https://my-test1uno.herokuapp.com/",
+  " https://my-test1uno.herokuapp.com/graphql",
+  " https://my-test1uno.herokuapp.com/api-docs",
+];
+const optionsCors = {
+  origin: (origin, callback) => {
+    if (whitelist.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error("no permitido"));
+    }
+  },
+};
+app.use(cors(optionsCors));
 
 app.listen(port);
