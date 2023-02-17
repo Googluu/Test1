@@ -7,6 +7,17 @@ const swaggerDocument = require("./swagger.json");
 const schema = require("./graphql/schema");
 
 const app = express();
+app.use(
+  cors({
+    origin: [
+      "https://my-test1uno.herokuapp.com/graphql",
+      "http://localhost:3000",
+      "http://localhost:5173",
+    ],
+    Credential: true,
+  })
+);
+
 const port = process.env.PORT || 3000;
 app.use(express.json());
 
@@ -36,26 +47,6 @@ app.use(
   "/api-docs",
   swaggerUi.serve,
   swaggerUi.setup(swaggerDocument, options)
-);
-
-const whitelist = [
-  "https://my-test1uno.herokuapp.com/graphql",
-  "http://localhost:3000",
-  "http://localhost:5173",
-];
-const optionsCors = {
-  origin: (origin, callback) => {
-    if (whitelist.includes(origin) || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("no permitido"));
-    }
-  },
-};
-app.use(
-  cors(optionsCors, {
-    Credential: true,
-  })
 );
 
 app.listen(port);
