@@ -41,6 +41,7 @@ app.use(
 const whitelist = [
   "https://my-test1uno.herokuapp.com/graphql",
   "http://localhost:3000",
+  "http://localhost:5173",
 ];
 const optionsCors = {
   origin: (origin, callback) => {
