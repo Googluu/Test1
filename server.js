@@ -40,6 +40,8 @@ app.use(
 
 const whitelist = [
   "https://my-test1uno.herokuapp.com/",
+  "https://my-test1uno.herokuapp.com/graphql",
+  "https://my-test1uno.herokuapp.com/api-docs/",
   "http://localhost:3000",
 ];
 const optionsCors = {
