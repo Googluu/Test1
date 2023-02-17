@@ -5,12 +5,13 @@
     "title": "My API",
     "description": "My API with Swagger"
   },
-  "basePath": "/",
+  "basePath": "/graphql",
+  "host": "localhost:3000",
   "schemes": ["http"],
   "consumes": ["application/json"],
   "produces": ["application/json"],
   "paths": {
-    "/graphql": {
+    "/": {
       "post": {
         "tags": ["graphql"],
         "summary": "Execute a GraphQL query",
