@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 const whitelist = [
-  "http://localhost:3000",
+  "http://localhost:5432",
   " https://my-test1uno.herokuapp.com/",
 ];
 const optionsCors = {
