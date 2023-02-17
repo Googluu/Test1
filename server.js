@@ -14,20 +14,12 @@ app.get("/", (req, res) => {
   res.send("Welcome");
 });
 
-app.use(
-  "/graphql",
-  graphqlHTTP({
-    schema,
-    graphiql: true,
-  })
-);
-
 const options = {
   swaggerDefinition: {
     info: {
-      title: "My APITEST1",
+      title: "My API",
       version: "1.0.0",
-      description: "My API with Swagger and Graphql + Node",
+      description: "My API with Swagger",
     },
   },
   apis: ["./graphql/*.js"],
@@ -41,8 +33,6 @@ app.use(
 const whitelist = [
   "http://localhost:3000",
   " https://my-test1uno.herokuapp.com/",
-  " https://my-test1uno.herokuapp.com/graphql",
-  " https://my-test1uno.herokuapp.com/api-docs",
 ];
 const optionsCors = {
   origin: (origin, callback) => {
@@ -53,6 +43,13 @@ const optionsCors = {
     }
   },
 };
+app.use(
+  "/graphql",
+  graphqlHTTP({
+    schema,
+    graphiql: true,
+  })
+);
 app.use(cors(optionsCors));
 
 app.listen(port);
