@@ -1,31 +1,30 @@
-const { GraphQLString, GraphQLID } = require("graphql");
+const { GraphQLString, GraphQLID, GraphQLInt } = require("graphql");
+
+const MovieType = require("./types");
 const { models } = require("../libs/sequelize");
 
 const createMovie = {
-  type: GraphQLString,
-  description: "A new movie",
+  type: MovieType,
+  description: "Create a new post",
   args: {
     name: { type: GraphQLString },
     description: { type: GraphQLString },
     image: { type: GraphQLString },
     duration: { type: GraphQLString },
   },
-  async resolve(_, args) {
-    const { name, description, image, duration } = args;
-
+  async resolve(_, { name, description, image, duration }) {
     const newMovie = new models.Movie({
       name,
       description,
       image,
       duration,
     });
-    await newMovie.save();
-    return "Success";
+    return await newMovie.save();
   },
 };
 
 const updateMovie = {
-  type: GraphQLString,
+  type: MovieType,
   description: "Update a movie",
   args: {
     id: { type: GraphQLID },
@@ -52,14 +51,12 @@ const updateMovie = {
         runValidators: true,
       }
     );
-
-    console.log(id, name, description, image, duration);
     return "Update success";
   },
 };
 
 const deleteMovie = {
-  type: GraphQLString,
+  type: GraphQLInt,
   description: "remove movie",
   args: {
     id: { type: GraphQLID },

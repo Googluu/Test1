@@ -9,7 +9,6 @@ const MovieType = new GraphQLObjectType({
     description: { type: GraphQLString },
     image: { type: GraphQLString },
     duration: { type: GraphQLString },
-    created_at: { type: GraphQLString },
   },
 });
 
