@@ -1,6 +1,6 @@
 type Query {
-  ping: String!
-  movies: [Movie!]!
+  bind: String!
+  movies: [Movie!]
 }
 
 type Mutation {
