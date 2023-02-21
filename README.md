@@ -64,6 +64,12 @@ Update a Post
 
 ![Captura de pantalla_20230221_073617](https://user-images.githubusercontent.com/99292913/220346661-9a6b0fc3-97fb-41a1-ae27-69c8e9ec2909.png)
 
+## Mutations
+
+Delete a Post
+
+![Captura de pantalla_20230221_074821](https://user-images.githubusercontent.com/99292913/220348857-2c98c08c-7b8d-4fa1-87d0-a9b1e3f5ec8c.png)
+
 ## Stack
 
 - JavaScript
