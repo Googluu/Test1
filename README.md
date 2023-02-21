@@ -44,7 +44,7 @@ Graphql API with Mutations and Queries
 
 Returns a list of posts
 
-![Captura de pantalla_20230221_070913](https://user-images.githubusercontent.com/99292913/220342575-4a4dda7d-006a-44c3-9ee2-8335d25d6d2a.png)
+![Captura de pantalla_20230221_084156](https://user-images.githubusercontent.com/99292913/220361702-1d7be310-02fc-4898-ab57-8a78f67849bb.png)
 
 ## Queries
 
