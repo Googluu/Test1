@@ -46,6 +46,12 @@ Returns a list of posts
 
 ![Captura de pantalla_20230221_070913](https://user-images.githubusercontent.com/99292913/220342575-4a4dda7d-006a-44c3-9ee2-8335d25d6d2a.png)
 
+## Queries
+
+Return a post
+
+![Captura de pantalla_20230221_072307](https://user-images.githubusercontent.com/99292913/220344060-5420cd5e-8400-425b-928d-15735f4ab3ad.png)
+
 ## Stack
 
 - JavaScript
