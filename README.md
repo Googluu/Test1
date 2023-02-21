@@ -38,7 +38,7 @@ DB_PORT=
 
 ## About the project
 
-# It is a movie API built with:
+It is a movie API built with:
 
 ## Stack
 
