@@ -1,4 +1,4 @@
-const { GraphQLString, GraphQLID, GraphQLInt } = require("graphql");
+const { GraphQLString, GraphQLID } = require("graphql");
 
 const MovieType = require("./types");
 const { models } = require("../libs/sequelize");
@@ -56,7 +56,7 @@ const updateMovie = {
 };
 
 const deleteMovie = {
-  type: GraphQLInt,
+  type: GraphQLID,
   description: "remove movie",
   args: {
     id: { type: GraphQLID },
@@ -66,7 +66,7 @@ const deleteMovie = {
 
     const removeMovie = await models.Movie.findByPk(id);
     await removeMovie.destroy({
-      _id: id,
+      id: id,
     });
 
     return "Movie deleted";
