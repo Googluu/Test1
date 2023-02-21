@@ -52,6 +52,12 @@ Return a post
 
 ![Captura de pantalla_20230221_072307](https://user-images.githubusercontent.com/99292913/220344060-5420cd5e-8400-425b-928d-15735f4ab3ad.png)
 
+## Mutations
+
+Create a new Post
+
+![Captura de pantalla_20230221_072834](https://user-images.githubusercontent.com/99292913/220345159-f0e20948-8487-42fd-85cf-cb8c64f22617.png)
+
 ## Stack
 
 - JavaScript
