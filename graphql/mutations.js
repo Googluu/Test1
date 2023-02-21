@@ -51,7 +51,7 @@ const updateMovie = {
         runValidators: true,
       }
     );
-    return "Update success";
+    return rta;
   },
 };
 
