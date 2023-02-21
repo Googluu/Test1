@@ -2,7 +2,7 @@
 
 Simple GraphQL movie post API using Nodejs and Postgres
 
-## Requisitos previos
+## Previous requirements
 
 ```
 Nodejs
