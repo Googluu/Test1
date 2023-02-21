@@ -38,7 +38,13 @@ DB_PORT=
 
 ## About the project
 
-It is a movie API built with:
+Graphql API with Mutations and Queries
+
+## Queries
+
+Returns a list of posts
+
+blob:https://web.whatsapp.com/20e69bd1-f3b3-4ab7-8ee1-f92764ebf2e8
 
 ## Stack
 
