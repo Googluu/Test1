@@ -10,14 +10,14 @@ const createMovie = {
     name: { type: GraphQLString },
     description: { type: GraphQLString },
     image: { type: GraphQLString },
-    duration: { type: GraphQLString },
+    relaseData: { type: GraphQLString },
   },
-  async resolve(_, { name, description, image, duration }) {
+  async resolve(_, { name, description, image, relaseData }) {
     const newMovie = new models.Movie({
       name,
       description,
       image,
-      duration,
+      relaseData,
     });
     return await newMovie.save();
   },
@@ -31,10 +31,10 @@ const updateMovie = {
     name: { type: GraphQLString },
     description: { type: GraphQLString },
     image: { type: GraphQLString },
-    duration: { type: GraphQLString },
+    relaseData: { type: GraphQLString },
   },
   async resolve(_, args) {
-    const { id, name, description, image, duration } = args;
+    const { id, name, description, image, relaseData } = args;
 
     if (!id) throw new Error("Post not found");
 
@@ -44,7 +44,7 @@ const updateMovie = {
         name,
         description,
         image,
-        duration,
+        relaseData,
       },
       {
         new: true,

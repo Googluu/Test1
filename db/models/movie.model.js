@@ -21,7 +21,7 @@ const MovieSchema = {
     type: DataTypes.TEXT,
     allowNull: false,
   },
-  duration: {
+  relaseData: {
     type: DataTypes.STRING,
     allowNull: false,
   },
