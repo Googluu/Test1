@@ -16,6 +16,7 @@ npm
 git clone https://github.com/Googluu/Test1.git
 cd Test1
 npm i
+npm run dev
 ```
 
 ## Add your origin
