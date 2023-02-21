@@ -1,6 +1,6 @@
 ## Graphql Nodejs Postgres PostMovies API
 
-Simple GraphQL movie post API using Nodejs and Postgres
+Simple movie post API using GraphQL, Nodejs and Postgres
 
 ## Previous requirements
 
