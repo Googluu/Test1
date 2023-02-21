@@ -44,7 +44,7 @@ Graphql API with Mutations and Queries
 
 Returns a list of posts
 
-blob:https://web.whatsapp.com/20e69bd1-f3b3-4ab7-8ee1-f92764ebf2e8
+![Captura de pantalla_20230221_070913](https://user-images.githubusercontent.com/99292913/220342575-4a4dda7d-006a-44c3-9ee2-8335d25d6d2a.png)
 
 ## Stack
 
