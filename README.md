@@ -35,3 +35,17 @@ DB_PASSWORD=
 DB_HOST=
 DB_PORT=
 ```
+
+## About the project
+
+# It is a movie API built with:
+
+## Stack
+
+- JavaScript
+- Nodejs
+- GraphQL
+- Express
+- Sequelize
+- Docker
+- Postgres
