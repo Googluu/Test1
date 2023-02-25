@@ -6,7 +6,7 @@
     "description": "My API with Swagger"
   },
   "basePath": "/graphql",
-  "host": "192.168.0.6",
+  "host": "localhost",
   "schemes": ["https"],
   "consumes": ["application/json"],
   "produces": ["application/json"],
