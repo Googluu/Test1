@@ -7,7 +7,7 @@
     "express-swaggerize": "^1.1.0",
     "graphql": "^15.3.0",
     "pg": "^8.9.0",
-    "sequelize": "^6.28.0",
+    "sequelize": "^6.29.0",
     "swagger-ui-express": "^4.6.0"
   },
   "scripts": {
